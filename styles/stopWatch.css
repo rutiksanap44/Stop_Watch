@@ -2,33 +2,34 @@ body {
     margin: 0px;
     padding: 0px;
 }
-
+.mainpage{
+    width: 100%;
+}
 h1 {
-    font-size: 70px;
+    font-size: 60px;
     font-family: 'Josefin Sans', sans-serif;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
     transition: 1s;
-    color: white;
+    color: dodgerblue;
     text-align: center;
 }
 .heading{
-    background-color: rgb(60, 156, 230);
+    /* background-color: rgb(60, 156, 230); */
     border-radius: 10px;
-    width: 500px;
+    width: 100%;
     height: 100x;
-    letter-spacing: 5px;
     transition: 1s;
 }
 h1:hover{
     color: dodgerblue;
 }
 .heading:hover{
-    background-color: white;
-    border: 3px solid dodgerblue;
+    /* background-color: white; */
+    /* border: 3px solid dodgerblue; */
 }
 .heading:hover h1{
-    color: dodgerblue;
+    color: black;
 }
 .mainpage {
     display: flex;
@@ -39,7 +40,7 @@ h1:hover{
 .clock {
     padding: 20px;
     display: flex;
-    font-size: 40px;
+    font-size: 60px;
     transition: 1s;
 }
 
@@ -57,10 +58,9 @@ h1:hover{
 
 .buttons {
     display: flex;
-    width: 400px;
-    padding: 70px;
-    justify-content: space-between;
-
+    width: 70%;
+    /* padding: 70px; */
+    justify-content: space-around;
 }
 
 .button {
@@ -68,7 +68,7 @@ h1:hover{
     color: white;
     border: none;
     height: 40px;
-    width: 100px;
+    width: 150px;
     border-radius: 10px;
     font-size: 20px;
     font-family: 'Josefin Sans', sans-serif;
