@@ -18,7 +18,7 @@ const timer = document.getElementsByClassName("timer");
 
 // assigning the initial value of timer status as false
 // false = timer is not running
-// true = timer is not running
+// true = timer is running
 let timerStatus = false;
 
 // initialzing id to use as a value with setInterval for further usage
@@ -29,7 +29,7 @@ let increament = function(){
     // initial is for the index of the timer
     // initial = 4 , 5 for second
     // initital = 2 , 3 for minute
-    // initial = 0 , 1 for second
+    // initial = 0 , 1 for hour
     let initial = timer.length - 1;
 
     // to get the value of current index present in timer 
