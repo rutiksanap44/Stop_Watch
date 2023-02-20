@@ -1,10 +1,15 @@
+/* body with 0 margin and padding */
 body {
     margin: 0px;
     padding: 0px;
 }
-.mainpage{
+
+/* upper most header div */
+.mainpage {
     width: 100%;
 }
+
+/* designing Stopwatch header */
 h1 {
     font-size: 60px;
     font-family: 'Josefin Sans', sans-serif;
@@ -14,29 +19,31 @@ h1 {
     color: dodgerblue;
     text-align: center;
 }
-.heading{
-    /* background-color: rgb(60, 156, 230); */
+
+.heading {
     border-radius: 10px;
     width: 100%;
     height: 100x;
     transition: 1s;
 }
-h1:hover{
+
+/* on hovering the heading  */
+h1:hover {
     color: dodgerblue;
 }
-.heading:hover{
-    /* background-color: white; */
-    /* border: 3px solid dodgerblue; */
-}
-.heading:hover h1{
+
+.heading:hover h1 {
     color: black;
 }
+
+/* desining the mainpage */
 .mainpage {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
+/* styling the clock with hour, min and second */
 .clock {
     padding: 20px;
     display: flex;
@@ -44,10 +51,12 @@ h1:hover{
     transition: 1s;
 }
 
-.clock:hover{
+/* styling on hovering the clock timer */
+.clock:hover {
     color: dodgerblue;
 }
 
+/* styling the timer */
 .hourhand,
 .minutehand,
 .secondshand {
@@ -56,6 +65,7 @@ h1:hover{
     font-family: 'Ubuntu', sans-serif;
 }
 
+/* styling the button's parent div */
 .buttons {
     display: flex;
     width: 70%;
@@ -63,6 +73,7 @@ h1:hover{
     justify-content: space-around;
 }
 
+/* styling the buttons */
 .button {
     background-color: dodgerblue;
     color: white;
@@ -75,18 +86,26 @@ h1:hover{
     font-family: 'Ubuntu', sans-serif;
     transition: 1s;
 }
-.button:hover{
+
+/* on hovering the buttons */
+.button:hover {
     background-color: white;
-    color:dodgerblue;
+    color: dodgerblue;
     cursor: pointer;
     border: 1px solid dodgerblue;
 }
-#startbtn{
-    color:green;
+
+/* Start button color */
+#startbtn {
+    color: green;
 }
-#stopbtn{
-    color:red;
+
+/* Stop button color */
+#stopbtn {
+    color: red;
 }
-#resetbtn{
-    color:yellow;
+
+/* Reset button color */
+#resetbtn {
+    color: yellow;
 }

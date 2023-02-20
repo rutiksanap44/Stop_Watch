@@ -5,21 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stop Watch</title>
+
+    <!-- My External Styling-->
     <link rel="stylesheet" href="/styles/stopWatch.css">
+
+    <!-- Used Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Main Div Header which contains all the Content inside it -->
     <div class="mainpage">
 
+        <!-- Stopwatch name heading -->
         <div class="heading">
             <h1>StopWatch</h1>
         </div>
 
+        <!-- Contains timer -->
         <div class="clock">
 
+            <!-- Hour timer -->
             <div class="hourhand">
 
                 <div class="timer" id="hours2">0</div>
@@ -27,6 +35,7 @@
                 <div class="timer" id="hours1">0</div>
             </div> :
 
+            <!-- Min Timer -->
             <div class="minutehand">
 
                 <div class="timer" id="minutes2">0</div>
@@ -34,6 +43,7 @@
                 <div class="timer" id="minutes1">0</div>
             </div> :
 
+            <!-- Second Timer -->
             <div class="secondshand">
         
                 <div class="timer" id="seconds2">0</div>
@@ -42,6 +52,7 @@
             </div>
         </div>
 
+        <!-- Start, Stop and Reset Button -->
         <div class="buttons">
 
             <button type="button" class="button" id="startbtn">Start</button>
@@ -52,6 +63,8 @@
         </div>
 
     </div>
+    
+    <!-- Used External JavaScript -->
     <script src="/scripts/stopWatchScript.js"></script>
 </body>
 </html>
