@@ -16,19 +16,24 @@ var id;
 
 let increament = function(){
     let initial = timer.length - 1;
-    let count = parseInt(timer[initial].innerHTML);
-    let finalTime = (initial % 2 == 0)?5:9;
-    while(count == finalTime){
-        count = 0;
-        timer[initial].innerHTML = count;
+    let counter = parseInt(timer[initial].innerHTML);
+    let lastTime;
+    if(initial % 2 == 0){
+        lastTime = 5
+    }else{
+        lastTime = 9;
+    }
+    while(counter == lastTime){
+        counter = 0;
+        timer[initial].innerHTML = counter;
         initial--;
-        count = parseInt(timer[initial].innerHTML);
-        finalTime = (initial % 2 == 0)?5:9;
+        counter = parseInt(timer[initial].innerHTML);
+        lastTime = (initial % 2 == 0)?5:9;
         if(initial < 0) break;
     }
     if(initial >= 0){
-        count++;
-        timer[initial].innerHTML = count;
+        counter++;
+        timer[initial].innerHTML = counter;
     }
 };
 
